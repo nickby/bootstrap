@@ -12,8 +12,8 @@
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,8 +102,17 @@
             <div class="row">
                 <h1>Название страницы</h1>
                 <p><i class="glyphicon glyphicon-gift"></i></p>
-                <i class="fa fa-camera-retro fa-lg"></i>
-                <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+                <p><i class="fa fa-anchor"></i></p>
+                
+                
+                <p><i class="fa fa-anchor fa-2x fa-spin"></i></p> <!-- вращаем -->
+                
+                <!-- вписываем друг в друга, выделяем цветом -->
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle-thin fa-stack-2x" style="color: #222;"></i>
+                    <i class="fa fa-twitter fa-stack-1x" style="color: #1b6d85;"></i>
+                </span
+
             </div>
         </div>
 
@@ -121,9 +130,9 @@
             </div>
         </div>
         
-        <!-- фиксируем футер -->
+        <!-- фиксируем футер
         <div class="navbar navbar-inverse navbar-fixed-bottom">
-        </div>
+        </div> -->
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
