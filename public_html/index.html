@@ -149,11 +149,11 @@
                         <div class="tab-content">
                             <div class="tab-pane fade in active" id="tab-1">
                                 <p>Text #1</p>
-                                <img src="images/olimpic.jpg" alt="" class="img-circle">
+                                <!--<img src="images/olimpic.jpg" alt="" class="img-rounded">-->
                             </div>
                             <div class="tab-pane fade" id="tab-2">
                                 <p>Text #2</p>
-                                <img src="images/olimpic.jpg" alt="" class="img-rounded">
+                                <img src="images/olimpic.jpg" alt="" class="img-circle">
                             </div>
                             <div class="tab-pane fade" id="tab-3">
                                 <p>Text #3</p>
@@ -177,8 +177,56 @@
             </div>
         </div>
         
-        
-        
+        <!--Аккордион-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <div id="accordion" class="panel-group">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapse-1" data-parent="#accordion" data-toggle="collapse">Открыть 1й слайд</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse in" id="collapse-1">
+                                <div class="panel-body">
+                                    <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapse-2" data-parent="#accordion" data-toggle="collapse">Открыть 2й слайд</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-2">
+                                <div class="panel-body">
+                                    <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#collapse-3" data-parent="#accordion" data-toggle="collapse">Открыть 3й слайд</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapse-3">
+                                <div class="panel-body">
+                                    <p>Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент Любой контент </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
+                </div>
+            </div>
+        </div>
         <br>
         <br>
         <br>
@@ -233,6 +281,28 @@
         <!-- фиксируем футер
         <div class="navbar navbar-inverse navbar-fixed-bottom">
         </div> -->
+        
+        
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h4 class="modal-title">Модальное окно</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Это модальное окно</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
